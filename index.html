@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d2b983413f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/mylogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hello,I am <br><span>Samuel Kyalo</span></h1>
+            </div>
+        </div> 
+    </div>
+<hr>
+    <!----------About-------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/MyImage.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">Learn About Me</h1>
+                    <p>I'm a web developer among a few things that I do, and I love bringing ideas to life. From creating eye-catching designs to solving problems with a creative twist, I'm here to make your vision a reality.
+                        Explore my work to see how I can help you tell your story and achieve your goals. Let's collaborate and create something amazing together!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Front-end and Back-end Developer</li>
+                            <li><span>Game Development</span><br>3D and 2D games</li>
+                            <li><span>Project Management</span><br>Project planning and Resource management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-2022</span><br>Freelance on Web development</li>
+                            <li><span>2019-2021</span><br>Project assistant manager</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2025</span><br>BBIT in Strathmore University (on-going)</li>
+                            <li><span>2018-2019</span><br>Engineering College</li>
+                            <li><span>2015-2018</span><br>Makueni High School</li>
+                            <li><span>2011-2014</span><br>Chogoria Boys' Boarding Primary School</li>
+                            <li><span>2008-2010</span><br>Mary Immaculate Educational Complex</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+<hr>
+    <!----------Services--------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web development <hr></h2>
+                    <p>I can develop and design a web application using coding and also by the use of word press</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Game Development<hr></h2>
+                    <p>Experience fun and excitement with my games! Whether it's simple 2D fun or immersive 3D worlds, I'm here to create enjoyable experiences. Let's make some awesome games together</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Project Management<hr></h2>
+                    <p>I'm here to streamline projects! With my expertise, I keep things organized and on track, ensuring smooth progress from start to finish. Let's tackle challenges together and achieve success, one project at a time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<hr>
+    <!-- Portfolio -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/KejaPLus.jpg" width="100" height="400">
+                    <div class="layer">
+                        <h3>KejaPlus App</h3>
+                        <a href="https://github.com/Kyalosam90/KejaPlus"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="images/ML.jpg" width="100" height="400">
+                    <div class="layer">
+                        <h3>Machine Learning</h3>
+                        
+                        <a href="https://github.com/Kyalosam90/MachineLearning"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="images/Code.jpg" width="100" height="400">
+                    <div class="layer">
+                        <h3>Qr Code Generator</h3>
+                        
+                        <a href="https://github.com/Kyalosam90/QRcodegenerator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+<hr> 
+    <!----------Contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Let's get in touch</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>samuelkyalo90@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0711243359</p>
+                    <div class="social-icons">
+                        
+                        <i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/samuel-kyalo-a0840b2b2/'"></i>
+                        <i class="fa-brands fa-github" onclick="location.href='https://github.com/Kyalosam90'"></i>
+                        <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/'"></i>
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2024 Samuel - All rights reserved</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+   <script>
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        msg.innerHTML = "Email sent successfully.";
+        setTimeout(() => {
+            msg.innerHTML = "";
+        }, 4000);
+        form.reset();
+    });
+</script>
+
+</body>
+</html>
